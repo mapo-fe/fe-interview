@@ -1,3 +1,7 @@
+/**
+ * sidebar自动生成
+ * 注意❓：会覆盖原有菜单！！！
+ */
 var fs = require('fs'),
   path = require('path')
 var sidebarTxt = '- [首页](/)\n'
@@ -66,6 +70,7 @@ var fs = require('fs')
 //     if(err) throw new Error('something wrong was happended') });
 
 // console.log(sidebarTxt)
+// 生成菜单
 fs.writeFile(path.resolve('./') + '/_sidebar.md', sidebarTxt, function (err) {
   if (err) {
     //console.error(err);

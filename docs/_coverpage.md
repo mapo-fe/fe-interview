@@ -14,5 +14,5 @@
 - 有志者、事竟成，破釜沉舟，百二秦关终属楚；
 - 苦心人、天不负，卧薪尝胆，三千越甲可吞吴。
 
-[GitHub]()
+[GitHub](https://github.com/mapo-fe/fe-interview)
 [Get Started](README.md)
