@@ -28,3 +28,7 @@
 
 - 位置：`docs/分类名/index.md`
 - 说明 ❓：分类 md 中图片资源，放置在当前分类下 assets 目录中
+
+### 预览说明
+
+- 使用 live-server 插件运行 docs 下`index.html`
