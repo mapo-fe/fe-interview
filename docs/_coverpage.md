@@ -1,8 +1,8 @@
 ![logo](./images/logo.png)
 
-# 顺义校区-前端面试宝典 <small>0.0.1</small>
+## 黑马程序员，成就高薪黑马。
 
-> 黑马程序员，成就高薪黑马。
+> 顺义校区-前端面试宝典 <small>0.0.1</small>
 
 - <a href="#">
     <img src="https://img.shields.io/static/v1?label=react&message=18.0.0&color=blueviolet" alt="react">
