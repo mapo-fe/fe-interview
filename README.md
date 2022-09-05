@@ -17,12 +17,13 @@
 
 ### 面试题分类
 
-- [html 面试题](/html/index.md)
-- [css 面试题](/css/index.md)
-- [js 面试题](/js/index.md)
-- [vue 面试题](/vue/index.md)
-- [react 面试题](/react/index.md)
-- [工程化 面试题](/project/index.md)
+- [html&css 面试题](#)
+- [javascript 面试题](#)
+- [项目 面试题](#)
+- [vue 面试题](#)
+- [小程序 面试题](#)
+- [react 面试题](#)
+- [工程化 面试题](#)
 
 ### 添加面试题
 
