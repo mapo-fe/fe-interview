@@ -10,7 +10,8 @@
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <!-- Theme: Simple Dark -->
   <!-- Theme: Simple -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  <link rel="stylesheet" href="./styles/dark.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"> -->
   <!-- <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/docsify/4.12.2/themes/vue.min.css"> -->
   <!-- <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/docsify/4.12.2/themes/buble.css" /> -->
@@ -31,17 +32,58 @@
       subMaxLevel: 6,
       auto2top: true,
       // name: '面试宝典',
+      // sidebarDisplayLevel: 1,
       search: {
         placeholder: '输入关键字，找题看👁',
         noData: '还没有呢~',
         // Headline depth, 1 - 6
         depth: 2,
-      }
+      },
+      plugins: [
+        function (hook, vm) {
+          hook.doneEach(function () {
+            const uls = document.querySelectorAll(".sidebar-nav > ul > li > ul")
+            document.querySelectorAll(".sidebar-nav > ul > li").forEach(
+              function (node, index, nodelist) {
+                let span = document.createElement("span");
+                if (node.firstChild.firstChild.nodeName === 'A') {
+                  // 排除单MD文件导航
+                  return
+                }
+                // console.log(1, node, node.firstChild.firstChild, node.firstChild.firstChild.nodeName)
+                span.innerHTML = node.firstChild.firstChild.nodeValue;
+                span.style.cursor = "pointer";
+                span.onclick = function (event) {
+                  let ul = event.target.nextElementSibling;
+                  if (ul.style.display === "none") {
+                    uls.forEach(ul => {
+                      ul.style.display = 'none'
+                    })
+                    ul.style.display = "block";
+                  } else {
+                    ul.style.display = "none";
+                  }
+                };
+                // 替换默认一级节点
+                node.firstChild.replaceWith(span);
+                node.lastChild.style.display = "none";
+              });
+            let active = document.querySelector(".sidebar-nav li.active");
+            if (active) {
+              active.parentElement.style.display = "block";
+            }
+          });
+        }
+      ]
+
     }
+
   </script>
   <!-- <script src="//unpkg.com/docsify/lib/docsify.min.js" data-coverpage data-router> -->
   <script src="https://cdn.bootcdn.net/ajax/libs/docsify/4.12.2/docsify.min.js" data-coverpage data-router></script>
   <script src="https://cdn.bootcdn.net/ajax/libs/docsify/4.12.2/plugins/search.min.js"></script>
+  <!-- plugins -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script> -->
   <!-- <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script> -->
   <!-- 挂件 -->
   <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
@@ -70,6 +112,7 @@
         "opacityOnHover": 0.2
       }
     });
+
   </script>
   </script>
 </body>
