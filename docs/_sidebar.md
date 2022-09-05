@@ -1,9 +1,9 @@
 - [首页](/)
 - html&css
 
+  - [说说你对盒子模型的理解?](/css/box.md)
   - [谈谈你对 BFC 的理解？](/css/BFC.md)
   - [css3 动画有哪些？](/css/animation.md)
-  - [说说你对盒子模型的理解?](/css/box.md)
   - [元素水平垂直居中的方法有哪些？如果元素不定宽高呢？](/css/center.md)
   - [如何实现两栏布局，右侧自适应？三栏布局中间自适应呢？](/css/column_layout.md)
   - [CSS3 新增了哪些新特性？](/css/css3_features.md)
@@ -69,8 +69,9 @@
   - [你是怎么理解 ES6 新增 Set、Map 两种数据结构的？](/js/set_map.md)
   - [说说 var、let、const 之间的区别](/js/var_let_const.md)
 - 项目经验
-  - [项目 1](/project/index.md)
-  - [项目 2](/project/人资.md)
+  - [黑马头条](/project/头条.md)
+  - [人资中台](/project/人资.md)
+  - [小兔鲜儿](/project/兔子.md)
 - vue
 
   - [说说对 vue 的理解？有哪些特性？](/vue/index.md '说说你对 vue 的理解？')
