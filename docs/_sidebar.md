@@ -1,4 +1,4 @@
-- [首页](/)
+- [首页](README.md)
 - html&css
 
   - [说说你对盒子模型的理解?](/css/box.md)
@@ -68,10 +68,6 @@
   - [你是怎么理解 ES6 中 Proxy 的？使用场景?](/js/proxy.md)
   - [你是怎么理解 ES6 新增 Set、Map 两种数据结构的？](/js/set_map.md)
   - [说说 var、let、const 之间的区别](/js/var_let_const.md)
-- 项目经验
-  - [黑马头条](/project/头条.md)
-  - [人资中台](/project/人资.md)
-  - [小兔鲜儿](/project/兔子.md)
 - vue
 
   - [说说对 vue 的理解？有哪些特性？](/vue/index.md '说说你对 vue 的理解？')
@@ -112,6 +108,12 @@
   - [Vue3.0 性能提升主要是通过哪几方面体现的？](/vue/performance.md)
   - [Vue3.0 里为什么要用 Proxy API 替代 defineProperty API ？](/vue/proxy.md)
   - [说说 Vue 3.0 中 Treeshaking 特性？举例说明一下？](/vue/treeshaking.md)
+
+- 项目经验
+
+  - [黑马头条](/project/头条.md)
+  - [人资中台](/project/人资.md)
+  - [小兔鲜儿](/project/兔子.md)
 
 - 小程序
 
