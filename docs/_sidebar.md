@@ -109,12 +109,17 @@
   - [Vue3.0 里为什么要用 Proxy API 替代 defineProperty API ？](/vue/proxy.md)
   - [说说 Vue 3.0 中 Treeshaking 特性？举例说明一下？](/vue/treeshaking.md)
 
+- 综合性面试题
+
+  - [综合性面试题](/all/fe1.md)
+
 - 项目经验
 
   - [引言](/project/经验.md)
-  - [黑马头条](/project/头条.md)
-  - [人资中台](/project/人资.md)
-  - [小兔鲜儿](/project/兔子.md)
+  - [移动项目](/project/移动项目.md)
+  - [小程序项目](/project/小程序项目.md)
+  - [后台系统项目](/project/后台系统项目.md)
+  - [电商项目](/project/电商项目.md)
 
 - 小程序
 
